@@ -1,4 +1,4 @@
--name: Install Nginx
+- name: Install Nginx
   hosts: WEB
   tasks:
     - name: Install nginx
