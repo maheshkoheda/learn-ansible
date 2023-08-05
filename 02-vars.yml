@@ -10,7 +10,7 @@
 
 - name: Print task variable
   ansible.builtin.debug:
-   msg: URL = {{ URL }}
+    msg: URL = {{ URL }}
    vars:
-    URL: tasks.google.com
+     URL: tasks.google.com
 
