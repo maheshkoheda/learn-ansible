@@ -11,6 +11,6 @@
 - name: Print task variable
   ansible.builtin.debug:
     msg: URL = {{ URL }}
-   vars:
+  vars:
      URL: tasks.google.com
 
