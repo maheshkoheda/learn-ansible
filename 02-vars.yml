@@ -13,4 +13,11 @@
         msg: URL = {{ URL }}
       vars:
          URL: tasks.google.com
+#Variable precedence
+#CLI (-e) Command line variable
+#tasks level variables
+#vars dir fom role
+#play level variables
+#defaults dir from role
+
 
