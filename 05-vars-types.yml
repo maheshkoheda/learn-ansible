@@ -1,0 +1,12 @@
+- name: Variable Types
+  hosts: localhost
+  connection: local1
+  vars:
+    fruit_name: Orange #string
+    quantity: 100 #number
+    for_sale: true #boolean yes/no true/false. Boolean becomes string if quoted.
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: Fruit Name - {{ fruit_name }}, Quantity - {{ quantity }}
+      when: for_sale
