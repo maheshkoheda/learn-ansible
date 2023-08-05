@@ -5,15 +5,15 @@
     fruits:
       - orange
       - apple
-    tasks:
-      - name: Print fruits
-        ansible.builtin.debug:
-          msg: Fruit Name - "{{ item }}"
-        loop: "{{ fruits }}"
+  tasks:
+     - name: Print fruits
+       ansible.builtin.debug:
+         msg: Fruit Name - "{{ item }}"
+       loop: "{{ fruits }}"
 
-      - name: Print fruits Local values
-        ansible.builtin.debug:
-          msg: Fruit Name - "{{ item }}"
-        loop:
-          - banana
-          - kiwi
+     - name: Print fruits Local values
+       ansible.builtin.debug:
+         msg: Fruit Name - "{{ item }}"
+       loop:
+         - banana
+         - kiwi
